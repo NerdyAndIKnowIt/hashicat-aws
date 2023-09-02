@@ -9,6 +9,7 @@ terraform {
 
 provider "aws" {
   region  = var.region
+  version = ">=3.42.0"
 }
 
 resource "aws_vpc" "hashicat" {
